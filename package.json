@@ -5,6 +5,7 @@
   "main": "server.js",
   "scripts": {
     "dev": "nodemon --ignore client/ server.js",
+    "start": "node server.js",
     "build": "cd client && npm run build"
   },
   "keywords": [],
