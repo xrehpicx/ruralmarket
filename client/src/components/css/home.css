@@ -1,0 +1,85 @@
+.home {
+  padding-bottom: 60px;
+}
+
+.home > header {
+  padding: 14px 20px;
+  padding-bottom: 20px;
+  position: -webkit-sticky;
+  position: sticky;
+  background: -webkit-gradient(linear, left top, left bottom, from(white), color-stop(white), color-stop(white), color-stop(white), to(transparent));
+  background: linear-gradient(to bottom, white, white, white, white, transparent);
+  z-index: 10;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.home .right button {
+  margin: 6px;
+}
+
+.products {
+  padding: 20px;
+  padding-top: 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(300px, auto))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+  grid-gap: 30px;
+  padding: 30px;
+  padding-top: 0;
+}
+
+.product {
+  border: 1px solid var(--accent);
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  background: -webkit-gradient(linear, left bottom, left top, from(white), to(transparent));
+  background: linear-gradient(to top, white, transparent);
+}
+
+.product .details {
+  padding: 10px 10px;
+}
+
+.main-product-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.quick-actions {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 20px;
+}
+/*# sourceMappingURL=home.css.map */
