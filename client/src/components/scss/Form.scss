@@ -10,16 +10,19 @@
         // margin-top: 10px;
         display: flex;
         padding: 10px;
-        gap: 10px;
+
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
+
+        &>div{
+            margin: 10px;
+        }
 
         .sub-form {
             display: flex;
             flex-direction: column;
             padding: 10px;
-            gap: 10px;
             justify-content: center;
             align-items: center;
         }

@@ -59,11 +59,29 @@ function Home() {
         <Products />
       </div>
       <div className="quick-actions">
-        <Fab variant="extended" color="primary" style={{ color: "white" }}>
+        <Fab
+          onClick={
+            user
+              ? () => console.log("going to cart")
+              : () => history.push("/signup")
+          }
+          variant="extended"
+          color="primary"
+          style={{ color: "white" }}
+        >
           <ShoppingCartIcon />
           <span style={{ marginLeft: "8px" }}>Cart</span>
         </Fab>
-        <Fab variant="extended" color="primary" style={{ color: "white" }}>
+        <Fab
+          onClick={
+            user
+              ? () => console.log("going to sell")
+              : () => history.push("/login")
+          }
+          variant="extended"
+          color="primary"
+          style={{ color: "white" }}
+        >
           <AddShoppingCartIcon />
           <span style={{ marginLeft: "8px" }}>sell</span>
         </Fab>

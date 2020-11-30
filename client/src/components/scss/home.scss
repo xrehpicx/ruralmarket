@@ -5,7 +5,7 @@
         padding: 14px 20px;
         padding-bottom: 20px;
         position: sticky;
-        background: linear-gradient(to bottom, white, white, white, white, transparent);
+        background: linear-gradient(to bottom, white, white, white, white, rgba(255, 255, 255, 0));
         z-index: 10;
         top: 0;
         display: flex;
@@ -40,7 +40,7 @@
     // max-height: 400px;
     display: flex;
     flex-direction: column-reverse;
-    background: linear-gradient(to top, white, transparent);
+    background: linear-gradient(to top, white, rgba(255, 255, 255, 0));
 
     .details {
         padding: 10px 10px;
@@ -65,10 +65,14 @@
     position: fixed;
     bottom: 0;
     left: 0;
-    padding: 20px;
+    padding: 10px 20px;
 
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+
+
+    &>button {
+        margin: 10px;
+    }
 }

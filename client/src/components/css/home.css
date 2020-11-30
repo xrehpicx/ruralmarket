@@ -7,8 +7,8 @@
   padding-bottom: 20px;
   position: -webkit-sticky;
   position: sticky;
-  background: -webkit-gradient(linear, left top, left bottom, from(white), color-stop(white), color-stop(white), color-stop(white), to(transparent));
-  background: linear-gradient(to bottom, white, white, white, white, transparent);
+  background: -webkit-gradient(linear, left top, left bottom, from(white), color-stop(white), color-stop(white), color-stop(white), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(to bottom, white, white, white, white, rgba(255, 255, 255, 0));
   z-index: 10;
   top: 0;
   display: -webkit-box;
@@ -50,8 +50,8 @@
   -webkit-box-direction: reverse;
       -ms-flex-direction: column-reverse;
           flex-direction: column-reverse;
-  background: -webkit-gradient(linear, left bottom, left top, from(white), to(transparent));
-  background: linear-gradient(to top, white, transparent);
+  background: -webkit-gradient(linear, left bottom, left top, from(white), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(to top, white, rgba(255, 255, 255, 0));
 }
 
 .product .details {
@@ -70,7 +70,7 @@
   position: fixed;
   bottom: 0;
   left: 0;
-  padding: 20px;
+  padding: 10px 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -80,6 +80,9 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 20px;
+}
+
+.quick-actions > button {
+  margin: 10px;
 }
 /*# sourceMappingURL=home.css.map */

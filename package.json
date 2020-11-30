@@ -7,7 +7,7 @@
     "dev": "nodemon --ignore client/ server.js",
     "start": "node server.js",
     "client-build": "cd client && npm run build",
-    "deploy": "npm run client-build && cd .. && git add . && git commit -m auto-deploy git push",
+    "deploy": "npm run client-build && git add . && git commit -m auto-deploy && git push",
     "sdeploy": "git add . && git commit -m auto-deploy && git push"
   },
   "keywords": [],

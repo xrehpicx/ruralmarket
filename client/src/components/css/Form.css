@@ -22,7 +22,6 @@
   display: -ms-flexbox;
   display: flex;
   padding: 10px;
-  gap: 10px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: center;
@@ -31,6 +30,11 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.login .form > div,
+.signup .form > div {
+  margin: 10px;
 }
 
 .login .form .sub-form,
@@ -43,7 +47,6 @@
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 10px;
-  gap: 10px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
